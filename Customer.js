@@ -24,7 +24,7 @@ db.connect((err) => {
     console.log('Connected to MySQL as id ' + db.threadId);
 });
 
-// Register the customer
+// Register the New customers
 router.post('/registerCustomers', (req, res) => {
     const { cTitle, cName, cEmail, country, cPhone, cTypeRoom, cBedding, cNumRoom, cMeal, cIn, cOut } = req.body;
 
